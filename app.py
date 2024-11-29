@@ -27,15 +27,15 @@ import platform
 
 # plt.rcParams['axes.unicode_minus'] = False  # 마이너스 기호 깨짐 방지
 
-# st.markdown("""
-#     <style>
-#     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
     
-#     html, body, [class*="css"]  {
-#         font-family: 'Noto Sans KR', sans-serif;
-#     }
-#     </style>
-#     """, unsafe_allow_html=True)
+    html, body, [class*="css"]  {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Streamlit 전체 화면 확장
 st.set_page_config(layout="wide")
