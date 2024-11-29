@@ -35,7 +35,7 @@ st.markdown("""
         font-family: 'Noto Sans KR', sans-serif;
     }
     </style>
-    """, unsafe_allow_html=True
+    """, unsafe_allow_html=True)
 
 # Streamlit 전체 화면 확장
 st.set_page_config(layout="wide")
