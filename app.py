@@ -18,14 +18,24 @@ import numpy as np
 import platform
 
 # 한글 폰트 설정
-if platform.system() == 'Windows':
-    plt.rcParams['font.family'] = 'Malgun Gothic'  # Windows
-elif platform.system() == 'Darwin':  # MacOS
-    plt.rcParams['font.family'] = 'AppleGothic'
-else:
-    plt.rcParams['font.family'] = 'NanumGothic'  # Linux 환경 (예: Colab)
+# if platform.system() == 'Windows':
+#     plt.rcParams['font.family'] = 'Malgun Gothic'  # Windows
+# elif platform.system() == 'Darwin':  # MacOS
+#     plt.rcParams['font.family'] = 'AppleGothic'
+# else:
+#     plt.rcParams['font.family'] = 'NanumGothic'  # Linux 환경 (예: Colab)
 
-plt.rcParams['axes.unicode_minus'] = False  # 마이너스 기호 깨짐 방지
+# plt.rcParams['axes.unicode_minus'] = False  # 마이너스 기호 깨짐 방지
+
+st.markdown("""
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+    
+    html, body, [class*="css"]  {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    </style>
+    """, unsafe_allow_html=True
 
 # Streamlit 전체 화면 확장
 st.set_page_config(layout="wide")
